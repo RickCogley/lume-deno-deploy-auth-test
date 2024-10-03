@@ -1,0 +1,35 @@
+---
+id: topindex
+lang: en
+priority: 0
+title: Protected Content
+---
+
+<!doctype html>
+<html lang="{{ it.lang || "en" }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ it.title || it.basename }}</title>
+
+    <meta name="supported-color-schemes" content="light dark">
+    <meta name="theme-color" content="hsl(220, 20%, 100%)" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="hsl(220, 20%, 10%)" media="(prefers-color-scheme: dark)">
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="canonical" href="{{ url |> url(true) }}">
+    {{ it.extra_head?.join("\n") }}
+</head>
+<body>
+  <div class="container">
+    <main class="main">
+      <h1>This is the secret stuff</h1>
+      <p>Lorem ipsum, wow...</p>
+
+
+
+</main>
+  </div>
+</body>
+</html>
