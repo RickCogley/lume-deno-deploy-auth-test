@@ -10,3 +10,4 @@
 <li>If users access the root <code>/</code>, there is no auth prompt, but if they access <code>/protected/</code> or <code>/protected/subfolder/</code>, directly in say, a &quot;private&quot; browser tab for testing, you'll see the typical HTTP basic_auth browser login prompt.</li>
 <li>If you use this code as a starting point, you'll need to update the variable or variables in your Deno Deploy project, referencing them as needed, and update the Deno Deploy project name in the GitHub workflow <code>deploy.yml</code> file.</li>
 </ul>
+<p>Normally I'd put the built site files folder <code>_site</code> in <code>.gitignore</code> so they are not cluttering the repo, but for demo purposes so you can see how it's being built, I left it alone.</p>
