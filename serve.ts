@@ -6,6 +6,7 @@ const server = new Server({
   root: `${Deno.cwd()}/_site`,
 });
 
+// Set the var in your Deno Deploy project environment variables.
 const myUSER_1_PASS = Deno.env.get("USER_1_PASS");
 const middleware = basicAuth({
   users: {
