@@ -5,6 +5,24 @@ const server = new Server({
   root: `${Deno.cwd()}/_site`,
 });
 
+const middleware = basicAuth({
+  users: {
+    "lume": "iscool",
+  },
+});
+
+server.use((req, next) => {
+  if (isProtected(req)) {
+    return middleware(req, next);
+  }
+  return next(req);
+});
+
+function isProtected(req) {
+  const url = new URL(req.url);
+  return url.pathname.startsWith("/protected/");
+}
+
 server.start();
 
 console.log("Listening on http://localhost:8000");
