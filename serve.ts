@@ -11,7 +11,7 @@ const server = new Server({
 
 const middleware = basicAuth({
   users: {
-    "lume": "iscool",
+    "lume": ${myEnvVar},
   },
 });
 
