@@ -1,6 +1,9 @@
 import Server from "lume/core/server.ts";
 import { basicAuth } from "https://deno.land/x/lume@v2.3.2/middlewares/basic_auth.ts";
 
+const myEnvVar = Deno.env.get("USER_1_PASS");
+console.log(`The value of USER_1_PASS is: ${myEnvVar}`);
+
 const server = new Server({
   port: 8000,
   root: `${Deno.cwd()}/_site`,
