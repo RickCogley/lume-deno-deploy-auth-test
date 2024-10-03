@@ -1,5 +1,5 @@
 import Server from "lume/core/server.ts";
-import basicAuth from lume@v2.3.2/middlewares/basic_auth.ts
+import { basicAuth } from "https://deno.land/x/lume@v2.3.2/middlewares/basic_auth.ts";
 
 const server = new Server({
   port: 8000,
