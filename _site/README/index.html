@@ -6,7 +6,7 @@
 <p>It assumes a few things:</p>
 <ul>
 <li>You're deploying to Deno Deploy, with an entry point of <code>serve.ts</code> and using a GitHub action, following the basic documentation for this style of deployment in the Lume docs.</li>
-<li>The <code>serve.ts</code> is referencing the middleware, checking a specific path you want to protect, and is pulling the user's password from an environment var from your Deno Deploy project. When you set this in the json object that holds the username:password pairs in <code>serve.ts</code>, you'll notice you need to reference the var within backticks.</li>
+<li>The <code>serve.ts</code> is referencing the middleware, checking a specific path you want to protect, and is pulling the user's password from an environment var in the connected Deno Deploy project. When you set this in the json object that holds the username:password pairs in <code>serve.ts</code>, you'll notice you need to reference the var within backticks.</li>
 <li>If users access the root <code>/</code>, there is no auth prompt, but if they access <code>/protected/</code> or <code>/protected/subfolder/</code>, directly in say, a &quot;private&quot; browser tab for testing, you'll see the typical HTTP basic_auth browser login prompt.</li>
 <li>If you use this code as a starting point, you'll need to update the variable or variables in your Deno Deploy project, referencing them as needed, and update the Deno Deploy project name in the GitHub workflow <code>deploy.yml</code> file.</li>
 </ul>
