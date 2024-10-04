@@ -18,4 +18,6 @@ This setup assumes a few things:
 * If users access the root `/`, there is no auth prompt, but if they access `/protected/` or `/protected/subfolder/`, directly in say, a "private" browser tab for testing, you'll see the typical HTTP basic_auth browser login prompt.  
 * If you use this code as a starting point, you'll need to update the variable or variables in your Deno Deploy project, referencing them as needed, and update the Deno Deploy project name in the GitHub workflow `deploy.yml` file.
 
-Normally I'd put the built site files folder `_site` in `.gitignore` so they are not cluttering the repo, but for demo purposes so you can see how it's being built, I left it alone.   
+Normally I'd put the built site files folder `_site` in `.gitignore` so they are not cluttering the repo, but for demo purposes so you can see how it's being built, I left it alone.  
+
+If you want to test the http-auth access again, just access the site or its subpaths in a private browser tab. Othwerwise your browser will cache the credentials. 
