@@ -36,9 +36,16 @@
 main {
   grid-area: main;
   color:darkslategray;
+  padding: 2em;
+  background-color: seashell;
 }
-.body {
-  margin-top: var(--row-gap-xsmall);
+
+main.protected {
+  background-color: lightpink;
+}
+
+body {
+  background-color: eggshell;
 }
 footer {
   grid-area: footer;

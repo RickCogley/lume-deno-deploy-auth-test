@@ -16,10 +16,11 @@
 
 <body>
   <div class="container">
-    <main class="main">
+    <main class="{{if it.protection }}protected{{ /if }}">
       {{ it.content }}
     </main>
     {{ include "layouts/templates/footer.vto" }}
   </div>
 </body>
 </html>
+

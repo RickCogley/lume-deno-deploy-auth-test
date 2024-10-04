@@ -5,6 +5,7 @@ lang: en
 priority: 0
 date: Git Last Modified
 title: Protected2
+protection: true
 ---
 
 # Another Protected Page

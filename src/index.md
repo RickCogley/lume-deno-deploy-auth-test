@@ -7,7 +7,5 @@ date: Git Last Modified
 title: Auth Test HOME
 ---
 
-# Auth Test
-Lorem ipsum...
-
-This is the [protected content](/protected).
+# Auth Test Home Page
+The content on the home page is not protected. Access [this link](/protected) for protected content.
