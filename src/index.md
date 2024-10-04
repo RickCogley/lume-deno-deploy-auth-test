@@ -8,4 +8,4 @@ title: Auth Test HOME
 ---
 
 # Auth Test Home Page
-The content on the home page is not protected. Access [this link](/protected) for protected content.
+The content on this home page is not protected. Access [this link](/protected) for protected content.
