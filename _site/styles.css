@@ -40,3 +40,12 @@ main {
 .body {
   margin-top: var(--row-gap-xsmall);
 }
+footer {
+  grid-area: footer;
+  color:whitesmoke;
+  background-color: darkslategray;
+  > .inner {
+    padding: 2em;
+  }
+}
+

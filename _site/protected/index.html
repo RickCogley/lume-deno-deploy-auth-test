@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Protected Content</title>
-
+    <title>Protected1 | Lume basic_auth Middle Test on Deno Deploy</title>
     <meta name="supported-color-schemes" content="light dark">
     <meta name="theme-color" content="hsl(220, 20%, 100%)" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="hsl(220, 20%, 10%)" media="(prefers-color-scheme: dark)">
@@ -14,15 +13,32 @@
     <link rel="canonical" href="http://localhost:3000/protected/">
     
 </head>
+
 <body>
   <div class="container">
     <main class="main">
-      <h1>This is the secret stuff</h1>
-      <p>Lorem ipsum, wow... And there's more <a href="/protected/subfolder/">protected content in a subfolder.</a></p>
+      <h1>Protected Page</h1>
+<p>Lorem ipsum...</p>
+<p>Here is more protected content in a <a href="/protected/subfolder/">subfolder</a>.</p>
 
-
-
-</main>
+    </main>
+    <footer>
+  <div class="inner">
+    <div class="links">
+      
+        <a class="menu-link" href="/" aria-label="Nav link in footer">Home</a>
+         | 
+      
+        <a class="menu-link" href="https://lume.land" aria-label="Nav link in footer">Lume</a>
+         | 
+      
+        <a class="menu-link" href="/protected/" aria-label="Nav link in footer">Protected Content</a>
+         | 
+      
+    </div>
+    <div class="copy">© DemoOrg </div>
+  </div>
+</footer>
   </div>
 </body>
 </html>

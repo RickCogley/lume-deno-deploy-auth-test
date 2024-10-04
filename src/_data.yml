@@ -1,0 +1,14 @@
+site:
+  title: Lume basic_auth Middle Test on Deno Deploy
+metas:
+  title: =title
+  description: =description
+footer:
+  copy: DemoOrg 
+  links:
+    - text: Home
+      url: /
+    - text: Lume
+      url: https://lume.land
+    - text: Protected Content
+      url: /protected/
