@@ -6,8 +6,12 @@
 This test site uses the "basicAuth" module from the Lume middleware `basic_auth.ts`. Basic auth isn't super secure, but it's good enough for applications where light security is enough security. 
 
 It's deployed here: https://rickcogley-lume-deno-auth.deno.dev/
+You can access the protected link, and the site should prompt for a username and password. Use these credentials:
 
-It assumes a few things: 
+* Username: lume
+* Password: iscool
+
+This setup assumes a few things: 
 
 * You're deploying to Deno Deploy, with an entry point of `serve.ts` and using a GitHub action, following the basic documentation for this style of deployment in the Lume docs. 
 * The `serve.ts` is referencing the middleware, checking a specific path you want to protect, and is pulling the user's password from an environment var in the connected Deno Deploy project. When you set this in the json object that holds the username:password pairs in `serve.ts`, you'll notice you need to reference the var within backticks. 

@@ -2,8 +2,13 @@
 <p><a href="https://github.com/rickcogley/lume-deno-deploy-auth-test/actions/workflows/deploy.yml"><img src="https://github.com/rickcogley/lume-deno-deploy-auth-test/actions/workflows/deploy.yml/badge.svg" alt="Deploy to Deno Deploy"></a></p>
 <h1>Lume Deno Deploy HTTP Basic-Auth Test</h1>
 <p>This test site uses the &quot;basicAuth&quot; module from the Lume middleware <code>basic_auth.ts</code>. Basic auth isn't super secure, but it's good enough for applications where light security is enough security.</p>
-<p>It's deployed here: https://rickcogley-lume-deno-auth.deno.dev/</p>
-<p>It assumes a few things:</p>
+<p>It's deployed here: https://rickcogley-lume-deno-auth.deno.dev/
+You can access the protected link, and the site should prompt for a username and password. Use these credentials:</p>
+<ul>
+<li>Username: lume</li>
+<li>Password: iscool</li>
+</ul>
+<p>This setup assumes a few things:</p>
 <ul>
 <li>You're deploying to Deno Deploy, with an entry point of <code>serve.ts</code> and using a GitHub action, following the basic documentation for this style of deployment in the Lume docs.</li>
 <li>The <code>serve.ts</code> is referencing the middleware, checking a specific path you want to protect, and is pulling the user's password from an environment var in the connected Deno Deploy project. When you set this in the json object that holds the username:password pairs in <code>serve.ts</code>, you'll notice you need to reference the var within backticks.</li>
