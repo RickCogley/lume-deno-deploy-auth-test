@@ -3,10 +3,11 @@
 
 # Lume Deno Deploy HTTP Basic-Auth Test
 
-This test site uses the "basicAuth" module from the Lume middleware `basic_auth.ts`. Basic auth isn't super secure, but it's good enough for applications where light security is enough security. 
+This test site uses the "basicAuth" module from the [Lume](https://lume.land/) middleware `basic_auth.ts` incorporated into a typescript entry-point. [HTTP basic auth](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication) isn't super secure, but it's good enough for situations where light security is enough security. 
 
-It's deployed here: https://rickcogley-lume-deno-auth.deno.dev/
-You can access the protected link, and the site should prompt for a username and password. Use these credentials:
+The site is deployed here: https://rickcogley-lume-deno-auth.deno.dev/
+
+If you access the protected link, the site should prompt for a username and password. Use these credentials to access that page or the one in the subfolder below it:
 
 * Username: lume
 * Password: iscool
@@ -18,6 +19,6 @@ This setup assumes a few things:
 * If users access the root `/`, there is no auth prompt, but if they access `/protected/` or `/protected/subfolder/`, directly in say, a "private" browser tab for testing, you'll see the typical HTTP basic_auth browser login prompt.  
 * If you use this code as a starting point, you'll need to update the variable or variables in your Deno Deploy project, referencing them as needed, and update the Deno Deploy project name in the GitHub workflow `deploy.yml` file.
 
-Normally I'd put the built site files folder `_site` in `.gitignore` so they are not cluttering the repo, but for demo purposes so you can see how it's being built, I left it alone.  
+Normally I'd put the built site files folder `_site` in `.gitignore` so they are not cluttering the repo, but for demo purposes so readers can see the output files, I left it alone.  
 
 If you want to test the http-auth access again, just access the site or its subpaths in a private browser tab. Othwerwise your browser will cache the credentials. 
