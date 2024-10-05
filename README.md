@@ -3,7 +3,7 @@
 
 # Lume Deno Deploy HTTP Basic-Auth Test
 
-This test site uses the "basicAuth" module from the [Lume](https://lume.land/) middleware `basic_auth.ts` incorporated into a typescript entry-point. [HTTP basic auth](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication) isn't super secure, but it's good enough for situations where light security is enough security. 
+This test site uses the ["basicAuth" module](https://lume.land/docs/core/server/#basic_auth) from the [Lume](https://lume.land/) middleware `basic_auth.ts` incorporated into a typescript entry-point. [HTTP basic auth](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication) isn't super secure, but it's good enough for situations where light security is enough security. 
 
 The site is deployed here: https://rickcogley-lume-deno-auth.deno.dev/
 
