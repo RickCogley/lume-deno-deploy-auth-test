@@ -1,8 +1,9 @@
 <footer>
   <div class="inner">
     <div class="links">
-      {{ for item of footer.links }}
-        <a class="menu-link" href="{{ item.url }}" aria-label="Nav link in footer">{{ item.text }}</a> |
+      {{ set lastKey = footer.links.length - 1 }}
+      {{ for key, item of footer.links }}
+        <a class="menu-link" href="{{ item.url }}" aria-label="Nav link in footer">{{ item.text }}</a> {{ if key == lastKey }}{{else}}|{{ /if }}
       {{ /for }}
     </div>
     <div class="copy">©{{ "now" |> date("y") }} {{ footer.copy }} </div>
