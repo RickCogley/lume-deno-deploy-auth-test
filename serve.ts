@@ -23,7 +23,8 @@ server.use((req, next) => {
 
 function isProtected(req) {
   const url = new URL(req.url);
-  return url.pathname.startsWith("/protected/");
+  return url.pathname.includes("/protected/");
+  // return url.pathname.startsWith("/protected/");
 }
 
 server.start();
